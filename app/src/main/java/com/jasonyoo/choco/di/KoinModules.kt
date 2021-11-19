@@ -1,7 +1,7 @@
 package com.jasonyoo.choco.di
 
 import com.google.gson.GsonBuilder
-import com.jasonyoo.choco.network.LoginApiFactory
+import com.jasonyoo.network.LoginApiFactory
 import com.jasonyoo.choco.screen.login.LoginViewModel
 import com.jasonyoo.choco.screen.main.MainViewModel
 import com.jasonyoo.choco.util.TokenManager
