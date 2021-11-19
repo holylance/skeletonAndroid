@@ -1,6 +1,6 @@
 package com.jasonyoo.choco.util
 
-import com.jasonyoo.choco.network.model.LoginToken
+import com.jasonyoo.network.model.LoginToken
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.subjects.BehaviorSubject
 

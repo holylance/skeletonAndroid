@@ -2,8 +2,8 @@ package com.jasonyoo.choco.screen.login
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.jasonyoo.choco.network.LoginService
-import com.jasonyoo.choco.network.model.LoginToken
+import com.jasonyoo.network.LoginService
+import com.jasonyoo.network.model.LoginToken
 import com.jasonyoo.choco.screen.base.BaseViewModel
 import com.jasonyoo.choco.util.TokenManager
 import com.jasonyoo.choco.util.ViewState

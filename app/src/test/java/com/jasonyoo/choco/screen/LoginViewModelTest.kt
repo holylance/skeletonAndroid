@@ -1,11 +1,11 @@
 package com.jasonyoo.choco.screen
 
 import com.jasonyoo.choco.InstantExecutorExtension
-import com.jasonyoo.choco.network.LoginService
-import com.jasonyoo.choco.network.mockdata.LoginRequestMock
-import com.jasonyoo.choco.network.mockdata.LoginTokenMock
+import com.jasonyoo.network.LoginService
 import com.jasonyoo.choco.screen.login.LoginViewModel
 import com.jasonyoo.choco.util.TokenManager
+import com.jasonyoo.network.internal.model.LoginRequest
+import com.jasonyoo.network.model.LoginToken
 import com.nhaarman.mockitokotlin2.any
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.verify
@@ -20,8 +20,8 @@ class LoginViewModelTest {
 
     private val apiService: LoginService = mock()
     private val tokenManager: TokenManager = mock()
-    private val loginRequest = LoginRequestMock.generate()
-    private val loginToken = LoginTokenMock.generate()
+    private val loginRequest = LoginRequest(email = "email", password = "password")
+    private val loginToken = LoginToken(token = "token")
 
     @BeforeEach
     fun setUp() {
